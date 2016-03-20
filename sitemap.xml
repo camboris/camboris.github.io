@@ -7,11 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://camboris.github.io/</loc>
-  <lastmod>2016-02-22T23:49:00Z</lastmod>
+  <lastmod>2016-03-20T20:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/2016/</loc>
+  <lastmod>2016-03-20T20:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-03-20T20:20:00Z</lastmod>
+  <lastmod>2016-03-20T20:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
@@ -24,5 +28,9 @@
  <url>
   <loc>https://camboris.github.io/listings/</loc>
   <lastmod>2016-02-22T23:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/esto-es-una-prueba/</loc>
+  <lastmod>2016-03-20T20:23:00Z</lastmod>
  </url>
 </urlset>
