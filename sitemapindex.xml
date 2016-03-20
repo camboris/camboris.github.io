@@ -6,15 +6,23 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://camboris.github.io/en/galleries/rss.xml</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/rss.xml</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/galleries/rss.xml</loc>
-  <lastmod>2016-03-20T20:20:00Z</lastmod>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-03-20T20:23:00Z</lastmod>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-03-20T20:23:00Z</lastmod>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://camboris.github.io/</loc>
-  <lastmod>2016-03-20T20:23:00Z</lastmod>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/2016/</loc>
@@ -15,11 +15,36 @@
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-03-20T20:23:00Z</lastmod>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
   <lastmod>2016-02-22T23:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/2016/</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/archive.html</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/galleries/</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/posts/esto-es-una-prueba/</loc>
+  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/esto-es-una-prueba/" />
  </url>
  <url>
   <loc>https://camboris.github.io/galleries/</loc>
@@ -32,5 +57,6 @@
  <url>
   <loc>https://camboris.github.io/posts/esto-es-una-prueba/</loc>
   <lastmod>2016-03-20T20:23:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://camboris.github.io/en/posts/esto-es-una-prueba/" />
  </url>
 </urlset>
