@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basta que sea</title><link>https://camboris.github.io/</link><description>Cosas</description><atom:link href="https://camboris.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Sun, 20 Mar 2016 20:27:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Esto es una prueba</title><link>https://camboris.github.io/posts/esto-es-una-prueba/</link><dc:creator>Cam Boris</dc:creator><description>&lt;div&gt;&lt;p&gt;Esto es una prueba.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Basta que sea</title><link>https://camboris.github.io/</link><description>Cosas</description><atom:link rel="self" href="https://camboris.github.io/rss.xml" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Tue, 22 Mar 2016 01:57:10 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Origami Darth Vader</title><link>https://camboris.github.io/posts/origami-darth-vader/</link><dc:creator>Cam Boris</dc:creator><description>&lt;div&gt;&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://camboris.github.io/galleries/DarthVader/dv-0.jpg"&gt;&lt;img alt="/galleries/DarthVader/dv-0.jpg" src="https://camboris.github.io/galleries/DarthVader/dv-0.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Primer prueba.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modelo diseñado por Tadashi Mori, plegado con papel sandwich de barrilete y aluminio de aproximadamente 25cm de lado.&lt;/p&gt;
+&lt;p&gt;Es un modelo intermedio, bastante interesante de plegar, tiene una secuencia bien pensada y aprovecha el papel, logrando volumen y estructura en la pieza.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://camboris.github.io/galleries/DarthVader/dv-1.jpg"&gt;&lt;img alt="/galleries/DarthVader/dv-1.jpg" src="https://camboris.github.io/galleries/DarthVader/dv-1.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Uno listo y el otro a medio terminar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://camboris.github.io/galleries/DarthVader/dv-2.jpg"&gt;&lt;img alt="/galleries/DarthVader/dv-2.jpg" src="https://camboris.github.io/galleries/DarthVader/dv-2.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Relación de tamaño entre el papel de prueba y el modelo terminado.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Hice dos en papel sandwich para regalar.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://camboris.github.io/galleries/DarthVader/dv-3.jpg"&gt;&lt;img alt="/galleries/DarthVader/dv-3.jpg" src="https://camboris.github.io/galleries/DarthVader/dv-3.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Listos para regalar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Videotutorial por el autor.&lt;/p&gt;
+&lt;iframe width="425" height="344" src="https://www.youtube.com/embed/nkeFJgQDpjQ?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;&lt;/div&gt;</description><category>origami</category><category>star wars</category><guid>https://camboris.github.io/posts/origami-darth-vader/</guid><pubDate>Mon, 21 Mar 2016 23:24:37 GMT</pubDate></item><item><title>Esto es una prueba</title><link>https://camboris.github.io/posts/esto-es-una-prueba/</link><dc:creator>Cam Boris</dc:creator><description>&lt;div&gt;&lt;p&gt;Esto es una prueba.&lt;/p&gt;
 &lt;p&gt;No podía ser de otra manera.&lt;/p&gt;
 &lt;p&gt;Shimmy Shimmy Ya&lt;/p&gt;&lt;/div&gt;</description><guid>https://camboris.github.io/posts/esto-es-una-prueba/</guid><pubDate>Sun, 20 Mar 2016 20:21:36 GMT</pubDate></item></channel></rss>

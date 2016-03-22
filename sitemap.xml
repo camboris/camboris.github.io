@@ -15,11 +15,23 @@
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
-  <lastmod>2016-02-22T23:49:00Z</lastmod>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/cat_origami/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/origami/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/star-wars/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/</loc>
@@ -31,15 +43,31 @@
  </url>
  <url>
   <loc>https://camboris.github.io/en/archive.html</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/cat_origami/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/origami/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/star-wars/</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/galleries/</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/galleries/DarthVader/</loc>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/posts/esto-es-una-prueba/</loc>
@@ -47,8 +75,17 @@
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/esto-es-una-prueba/" />
  </url>
  <url>
+  <loc>https://camboris.github.io/en/posts/origami-darth-vader/</loc>
+  <lastmod>2016-03-21T23:31:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/origami-darth-vader/" />
+ </url>
+ <url>
   <loc>https://camboris.github.io/galleries/</loc>
-  <lastmod>2016-02-22T23:49:00Z</lastmod>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/galleries/DarthVader/</loc>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/listings/</loc>
@@ -58,5 +95,9 @@
   <loc>https://camboris.github.io/posts/esto-es-una-prueba/</loc>
   <lastmod>2016-03-20T20:23:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://camboris.github.io/en/posts/esto-es-una-prueba/" />
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/origami-darth-vader/</loc>
+  <lastmod>2016-03-21T23:31:00Z</lastmod>
  </url>
 </urlset>

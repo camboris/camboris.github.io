@@ -6,12 +6,44 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://camboris.github.io/categories/cat_origami.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/categories/origami.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/categories/star-wars.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/cat_origami.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/origami.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/star-wars.xml</loc>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/galleries/DarthVader/rss.xml</loc>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/en/galleries/rss.xml</loc>
   <lastmod>2016-03-20T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/rss.xml</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/galleries/DarthVader/rss.xml</loc>
+  <lastmod>2016-03-21T23:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/rss.xml</loc>
@@ -19,10 +51,10 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-03-20T20:27:00Z</lastmod>
+  <lastmod>2016-03-21T23:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>
