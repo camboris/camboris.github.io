@@ -8,25 +8,27 @@
 .. type: text
 
 .. figure:: /galleries/DarthVader/dv-0.jpg
-    :width: 300
+    :width: 500
     :target: /galleries/DarthVader/dv-0.jpg
     :align: center
 
-    Primer prueba.
+    Primera prueba.
 
 Modelo diseñado por Tadashi Mori, plegado con papel sandwich de barrilete y aluminio de aproximadamente 25cm de lado.
+
+.. TEASER_END
 
 Es un modelo intermedio, bastante interesante de plegar, tiene una secuencia bien pensada y aprovecha el papel, logrando volumen y estructura en la pieza.
 
 .. figure:: /galleries/DarthVader/dv-1.jpg
-    :width: 300
+    :width: 500
     :target: /galleries/DarthVader/dv-1.jpg
     :align: center
 
     Uno listo y el otro a medio terminar.
 
 .. figure:: /galleries/DarthVader/dv-2.jpg
-    :width: 300
+    :width: 500
     :target: /galleries/DarthVader/dv-2.jpg
     :align: center
 
@@ -36,7 +38,7 @@ Es un modelo intermedio, bastante interesante de plegar, tiene una secuencia bie
 Hice dos en papel sandwich para regalar.
 
 .. figure:: /galleries/DarthVader/dv-3.jpg
-    :width: 300
+    :width: 500
     :target: /galleries/DarthVader/dv-3.jpg
     :align: center
 
@@ -45,3 +47,7 @@ Hice dos en papel sandwich para regalar.
 Videotutorial por el autor.
 
 .. youtube:: nkeFJgQDpjQ
+
+
+| ♪ *Unas estrofas más*
+| ♪ *Buscán mi tarde dibujar*
