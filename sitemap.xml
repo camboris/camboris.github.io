@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
-  <lastmod>2016-03-27T20:29:00Z</lastmod>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/cat_libros/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>https://camboris.github.io/categories/cat_programacion/</loc>
   <lastmod>2016-03-24T15:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/haxe/</loc>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/js/</loc>
@@ -67,11 +71,11 @@
  </url>
  <url>
   <loc>https://camboris.github.io/en/archive.html</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/</loc>
-  <lastmod>2016-03-27T20:29:00Z</lastmod>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/cat_libros/</loc>
@@ -84,6 +88,10 @@
  <url>
   <loc>https://camboris.github.io/en/categories/cat_programacion/</loc>
   <lastmod>2016-03-24T15:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/haxe/</loc>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/js/</loc>
@@ -123,6 +131,11 @@
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/esto-es-una-prueba/" />
  </url>
  <url>
+  <loc>https://camboris.github.io/en/posts/haxe-%2B-js-01/</loc>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/haxe-%2B-js-01/" />
+ </url>
+ <url>
   <loc>https://camboris.github.io/en/posts/linting-de-js-en-neovim/</loc>
   <lastmod>2016-03-24T15:23:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/linting-de-js-en-neovim/" />
@@ -153,6 +166,10 @@
   <loc>https://camboris.github.io/posts/esto-es-una-prueba/</loc>
   <lastmod>2016-03-20T20:23:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://camboris.github.io/en/posts/esto-es-una-prueba/" />
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/haxe-%2B-js-01/</loc>
+  <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/posts/linting-de-js-en-neovim/</loc>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="https://camboris.github.io/posts/haxe-%2B-js-01/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haxe + JS 01 | Basta que sea</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="canonical" href="https://camboris.github.io/posts/haxe-%2B-js-01/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Cam Boris">
+<link rel="prev" href="../the-long-way-to-a-small-angry-planet/" title="The Long Way to a Small, Angry Planet" type="text/html">
+<meta property="og:site_name" content="Basta que sea">
+<meta property="og:title" content="Haxe + JS 01">
+<meta property="og:url" content="https://camboris.github.io/posts/haxe-%2B-js-01/">
+<meta property="og:description" content="Haxe es un lenguaje muy atractivo, por un lado su facilidad para aprenderlo, ya que su sintaxis es muy similar a EcmaScript, y por el otro su capacidad de escribir otros lenguajes. Es tanto un lenguaj">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-04-02T16:49:50-03:00">
+<meta property="article:tag" content="haxe">
+<meta property="article:tag" content="js">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://camboris.github.io/">
+
+                <span id="blog-title">Basta que sea</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archivo</a>
+                </li>
+<li>
+<a href="../../categories/">Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml">Canal RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://camboris.github.io/en/" rel="alternate" hreflang="en">English</a></li>
+
+                
+                    
+    <li>
+    <a href="../haxe-%2B-js-01/index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="../haxe-%2B-js-01/" class="u-url">Haxe + JS 01</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Cam Boris
+            </span></p>
+            <p class="dateline"><a href="../haxe-%2B-js-01/" rel="bookmark"><time class="published dt-published" datetime="2016-04-02T16:49:50-03:00" itemprop="datePublished" title="2016-04-02 16:49">2016-04-02 16:49</time></a></p>
+                <p class="commentline">
+        
+    <a href="../haxe-%2B-js-01/#disqus_thread" data-disqus-identifier="cache/posts/haxe-+-js-01.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="../haxe-%2B-js-01/index.rst" id="sourcelink">Código fuente</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p><a class="reference external" href="http://haxe.org/">Haxe</a> es un lenguaje muy atractivo, por un lado su facilidad para aprenderlo, ya que su sintaxis es muy similar a EcmaScript, y por el otro su capacidad de escribir otros lenguajes. Es tanto un lenguaje como un compilador.</p>
+<p>Además de soportar características avanzadas como el soporte para macros, lo que más me gusta es lo simple que hace escribir un gran rango de aplicaciones, desde juegos para la plataforma que queramos, a frontends en js o backends en js o php.</p>
+<!-- TEASER_END -->
+<p>Suelo usarlo para juegos, con frameworks como <a class="reference external" href="http://openfl.org/">Openfl</a> o <a class="reference external" href="http://haxeflixel.com/">Flixel</a> o <a class="reference external" href="http://luxeengine.com/">Luxe</a>, pero estoy empezando a probarlo con js, ya que tiene un excelente soporte, y es un lenguaje mas completo que Coffescript o Typescript.</p>
+<p>Las últimas versiones de <a class="reference external" href="http://haxe.org/">Haxe</a> ya tiene por defecto habilitado DCE (Dead Code Elimination), lo que hace que el código generado sea en muchos casos mejor que el de otras herramientas.</p>
+<p>Ejemplo mínimo de un hola mundo:</p>
+<table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-1"> 1</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-2"> 2</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-3"> 3</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-4"> 4</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-5"> 5</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-6"> 6</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-7"> 7</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-8"> 8</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-9"> 9</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-10">10</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-11">11</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-12">12</a>
+<a href="../haxe-%2B-js-01/#rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-13">13</a></pre></div></td>
+<td class="code"><pre class="code javascript"><a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-1"></a><span class="c1">//HolaMundo.hx</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-2"></a><span class="kr">package</span><span class="p">;</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-3"></a>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-4"></a><span class="kr">class</span> <span class="nx">HolaMundo</span> <span class="p">{</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-5"></a>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-6"></a>    <span class="kd">function</span> <span class="k">new</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-7"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s2">"Hola Mundo"</span><span class="p">);</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-8"></a>    <span class="p">}</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-9"></a>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-10"></a>    <span class="kr">static</span> <span class="kr">public</span> <span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-11"></a>        <span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HolaMundo</span><span class="p">();</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-12"></a>    <span class="p">}</span>
+<a name="rest_code_54db36445f8b4d81a1ec5ffd8c9ae903-13"></a><span class="p">}</span>
+</pre></td>
+</tr></table>
+<p>Este es el ejemplo mas sencillo que podemos hacer en <a class="reference external" href="http://haxe.org/">Haxe</a>. La función <cite>main()</cite> es el punto de entrada de la aplicación, la cual crea una nueva instancia de la clase <cite>HolaMundo</cite>, que ejecuta <cite>new</cite> como su constructor.</p>
+<p>Para compilar, ejecutamos por linea de comando:</p>
+<pre class="code bash"><a name="rest_code_5e4fc23210d949cc8494d703f033381d-1"></a>haxe -main HolaMundo -js holamundo.js
+</pre>
+<p>Donde <tt class="docutils literal">haxe</tt> es el ejecutable del compilador, con <tt class="docutils literal"><span class="pre">-main</span> HolaMundo</tt> le decimos cual es la clase que contiene el punto de entrada de la aplicación y <tt class="docutils literal"><span class="pre">-js</span> holamundo,js</tt> cuál es el archivo de salida. Con las dependencias adecuadas instaladas, podríamos decirle que genere <tt class="docutils literal">cpp</tt> lo que nos daría un ejecutable en la plataforma que estamos, escribiendo por nosotros código C++, o <tt class="docutils literal">php</tt> o <tt class="docutils literal">python</tt> o <tt class="docutils literal">java</tt> o algún otro de los targets del lenguaje.</p>
+<p>Si vemos el código js generado, es bastante legible y compacto.</p>
+<pre class="code javascript"><a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-1"></a><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">console</span><span class="p">)</span> <span class="p">{</span> <span class="s2">"use strict"</span><span class="p">;</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-2"></a><span class="kd">var</span> <span class="nx">HolaMundo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-3"></a>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hola Mundo"</span><span class="p">);</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-4"></a><span class="p">};</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-5"></a><span class="nx">HolaMundo</span><span class="p">.</span><span class="nx">main</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-6"></a>    <span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HolaMundo</span><span class="p">();</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-7"></a><span class="p">};</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-8"></a><span class="nx">HolaMundo</span><span class="p">.</span><span class="nx">main</span><span class="p">();</span>
+<a name="rest_code_5d7a6beb590a4e059bfcec41518ef920-9"></a><span class="p">})(</span><span class="k">typeof</span> <span class="nx">console</span> <span class="o">!=</span> <span class="s2">"undefined"</span> <span class="o">?</span> <span class="nx">console</span> <span class="o">:</span> <span class="p">{</span><span class="nx">log</span><span class="o">:</span><span class="kd">function</span><span class="p">(){}});</span>
+</pre>
+<p>Para próximos posts, voy a explicar como usar librerías externas, organizar mejor el código y muchas cosas más que podemos hacer con <a class="reference external" href="http://haxe.org/">Haxe</a></p>
+<div class="line-block">
+<div class="line">♪ <em>Soy la estrella del baile</em>
+</div>
+<div class="line">♪ <em>Me piden que baile y todos miran hacia mi</em>
+</div>
+<div class="line">La estrella del baile - Riki Musso</div>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/haxe/" rel="tag">haxe</a></li>
+            <li><a class="tag p-category" href="../../categories/js/" rel="tag">js</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../the-long-way-to-a-small-angry-planet/" rel="prev" title="The Long Way to a Small, Angry Planet">Publicación anterior</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="camborisblog",
+            disqus_url="https://camboris.github.io/posts/haxe-%2B-js-01/",
+        disqus_title="Haxe + JS 01",
+        disqus_identifier="cache/posts/haxe-+-js-01.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="camborisblog";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2016         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
