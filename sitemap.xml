@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-04-02T22:57:00Z</lastmod>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
-  <lastmod>2016-04-02T22:57:00Z</lastmod>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/cat_libros/</loc>
@@ -34,12 +34,24 @@
   <lastmod>2016-03-24T15:24:00Z</lastmod>
  </url>
  <url>
+  <loc>https://camboris.github.io/categories/go/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://camboris.github.io/categories/haxe/</loc>
   <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/js/</loc>
   <lastmod>2016-03-24T15:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/juegos-de-mesa/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/juegos/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/libros/</loc>
@@ -71,11 +83,11 @@
  </url>
  <url>
   <loc>https://camboris.github.io/en/archive.html</loc>
-  <lastmod>2016-04-02T22:57:00Z</lastmod>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/</loc>
-  <lastmod>2016-04-02T22:57:00Z</lastmod>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/cat_libros/</loc>
@@ -90,12 +102,24 @@
   <lastmod>2016-03-24T15:24:00Z</lastmod>
  </url>
  <url>
+  <loc>https://camboris.github.io/en/categories/go/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://camboris.github.io/en/categories/haxe/</loc>
   <lastmod>2016-04-02T22:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/js/</loc>
   <lastmod>2016-03-24T15:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/juegos-de-mesa/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/juegos/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/libros/</loc>
@@ -146,6 +170,15 @@
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/origami-darth-vader/" />
  </url>
  <url>
+  <loc>https://camboris.github.io/en/posts/relacion-logica-entre-sistemas-de-puntuacion-de-go/</loc>
+  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/relacion-logica-entre-sistemas-de-puntuacion-de-go/" />
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/posts/relacion-logica-entre-sistmas-de-puntuacion-de-go/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://camboris.github.io/en/posts/the-long-way-to-a-small-angry-planet/</loc>
   <lastmod>2016-03-27T20:15:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/the-long-way-to-a-small-angry-planet/" />
@@ -178,6 +211,14 @@
  <url>
   <loc>https://camboris.github.io/posts/origami-darth-vader/</loc>
   <lastmod>2016-03-21T23:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/relacion-logica-entre-sistemas-de-puntuacion-de-go/</loc>
+  <lastmod>2016-04-17T21:18:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/relacion-logica-entre-sistmas-de-puntuacion-de-go/</loc>
+  <lastmod>2016-04-17T20:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/posts/the-long-way-to-a-small-angry-planet/</loc>
