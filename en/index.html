@@ -73,7 +73,58 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/relacion-logica-entre-sistemas-de-puntuacion-de-go/" class="u-url">Relación Lógica entre sistemas de puntuación de Go</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/bcf-boris-css-framework/" class="u-url">BCF - Boris CSS Framework</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Cam Boris
+            </span></p>
+            <p class="dateline"><a href="posts/bcf-boris-css-framework/" rel="bookmark"><time class="published dt-published" datetime="2016-05-21T10:00:27-03:00" title="2016-05-21 10:00">2016-05-21 10:00</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/bcf-boris-css-framework/#disqus_thread" data-disqus-identifier="cache/posts/bcf-boris-css-framework.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p>Hace poco estaba armando un pequeño sitio de prueba y me encontré con que iba a necesitar un sistema de grillas. Viendo un poco la oferta de frameworks y sistemas de grillas para CSS, llegué a la conclusión que al mundo le faltaba un framework más. Y le puse mi nombre, no podía ser de otra manera...</p>
+<p>Así nació, el <a class="reference external" href="https://github.com/camboris/bcf">Boris CSS Framework</a>, aunque debo admitir que acepto sugerencias para el nombre, siempre que incluyan el Boris :)</p>
+<p>En realidad, de original tiene poco, y de framework menos, ya que es un rejunte de distintas cosas que fui encontrando y adaptando a mis necesidades. Lo que hice fue juntarlos, para encontrarlos fácilmente y no renegar buscando. No es un framework en el sentido que la idea es bajarlo y modificarlo a gusto.</p>
+<p>Lo primero que necesitamos al encarar un sitio, pequeño o grande, es un reset. Cada navegador le da propiedades diferentes a los componentes básicos, así que la idea es poner una serie de reglas básicas que nos permita asegurarnos que las cosas se van a ver más o menos parecidas en todos los navegadores.</p>
+<p>Una aclaración, no tengo interés alguno en soportar la versión que sea de IE, si anda, genial, sino, lo siento, siempre pueden agregar la funcionalidad que necesiten.</p>
+<p>El que puse es un mix de distintos resets que fui encontrando en la web y que necesité en el proyecto que dio origen al <a class="reference external" href="https://github.com/camboris/bcf">BCF</a>.</p>
+<p>Como característica final, -dije que era un framework sencillo-, tenemos una grilla, robada y modificada. La grilla original es <a class="reference external" href="https://github.com/mourner/dead-simple-grid">Dead Simple Grid</a>.</p>
+<p>El principal cambio que le hice a la grilla, fue hacerla depender de una clase <tt class="docutils literal">container</tt> al estilo bootstrap, para que la estructura quede  <tt class="docutils literal">.container &gt; .row &gt; .col</tt></p>
+<p>Al encararlo de esta manera nos permite definir libremente el tamaño del <tt class="docutils literal">container</tt> y las <tt class="docutils literal">col</tt>, dándonos flexibilidad absoluta para resolver los problemas que nos proponen algunos diseñadores cuando se les ocurre poner 5 columnas en el diseño.</p>
+<pre class="code text"><a name="rest_code_5678a18d2e334f54be50a1436ab91828-1"></a>//css
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-2"></a>.container {
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-3"></a>    width: 100%
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-4"></a>}
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-5"></a>
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-6"></a>.col.-demo {
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-7"></a>    width: 20%;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-8"></a>}
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-9"></a>
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-10"></a>
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-11"></a>//html
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-12"></a>&lt;div class="container"&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-13"></a>    &lt;div class="row"&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-14"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-15"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-16"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-17"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-18"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-19"></a>    &lt;/div&gt;
+<a name="rest_code_5678a18d2e334f54be50a1436ab91828-20"></a>&lt;/div&gt;
+</pre>
+<p>Si a alguien le suena raro que la clase sea <tt class="docutils literal"><span class="pre">-demo</span></tt> se debe a que estoy tratando de seguir los consejos de este sistema <a class="reference external" href="https://github.com/rstacruz/rscss">Reasonable System for CSS Stylesheet Structure</a>. Estoy probando y adaptándolo a mi gusto.</p>
+<p>Una de las ventajas de encarar la grilla de esta manera, es que podemos redefinir arbitrariamente el ancho de las columnas dentro de los media queries, ajustándolo a las necesidades particulares del sitio.</p>
+<p>Para ir cerrando esta breve presentación del aún más breve <a class="reference external" href="https://github.com/camboris/bcf">BCF</a>, ¿por qué no usé flex? Porque todavía no está tan difundido y sigue teniendo un aura de magia negra. La idea es implementarlo a futuro porque nos trae beneficios adicionales, como columnas del mismo alto, algo que a los diseñadores les encanta y a que los desarrolladores nos complica la vida.</p>
+<p>Si alguno lo prueba, lo usa o lo rompe, me avisa.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/relacion-logica-entre-sistemas-de-puntuacion-de-go/" class="u-url">Relación Lógica entre sistemas de puntuación de Go</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Cam Boris

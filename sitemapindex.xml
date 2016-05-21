@@ -15,15 +15,23 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_programacion.xml</loc>
-  <lastmod>2016-04-03T22:55:00Z</lastmod>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/categories/css.xml</loc>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/go.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/haxe.xml</loc>
   <lastmod>2016-04-03T22:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/categories/html.xml</loc>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/js.xml</loc>
@@ -31,11 +39,11 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/juegos-de-mesa.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/juegos.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/libros.xml</loc>
@@ -67,15 +75,23 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_programacion.xml</loc>
-  <lastmod>2016-04-03T22:55:00Z</lastmod>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/css.xml</loc>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/go.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/haxe.xml</loc>
   <lastmod>2016-04-03T22:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/html.xml</loc>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/js.xml</loc>
@@ -83,11 +99,11 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/juegos-de-mesa.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/juegos.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-04-17T21:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/libros.xml</loc>
@@ -111,30 +127,30 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/galleries/DarthVader/rss.xml</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-05-21T21:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/galleries/rss.xml</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-05-21T21:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/rss.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/DarthVader/rss.xml</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-05-21T21:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/rss.xml</loc>
-  <lastmod>2016-03-27T21:39:00Z</lastmod>
+  <lastmod>2016-05-21T21:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-05-07T13:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-04-17T21:18:00Z</lastmod>
+  <lastmod>2016-05-21T21:48:00Z</lastmod>
  </sitemap>
 </sitemapindex>
