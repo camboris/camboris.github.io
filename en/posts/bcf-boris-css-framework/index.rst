@@ -11,6 +11,8 @@ Hace poco estaba armando un pequeño sitio de prueba y me encontré con que iba 
 
 Así nació, el `Boris CSS Framework`_, aunque debo admitir que acepto sugerencias para el nombre, siempre que incluyan el Boris :)
 
+.. TEASER_END
+
 En realidad, de original tiene poco, y de framework menos, ya que es un rejunte de distintas cosas que fui encontrando y adaptando a mis necesidades. Lo que hice fue juntarlos, para encontrarlos fácilmente y no renegar buscando. No es un framework en el sentido que la idea es bajarlo y modificarlo a gusto.
 
 Lo primero que necesitamos al encarar un sitio, pequeño o grande, es un reset. Cada navegador le da propiedades diferentes a los componentes básicos, así que la idea es poner una serie de reglas básicas que nos permita asegurarnos que las cosas se van a ver más o menos parecidas en todos los navegadores.
