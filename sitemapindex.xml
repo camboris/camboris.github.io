@@ -10,16 +10,20 @@
   <lastmod>2016-03-27T21:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://camboris.github.io/categories/cat_linux.xml</loc>
+  <lastmod>2016-05-29T01:10:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/categories/cat_origami.xml</loc>
   <lastmod>2016-03-27T21:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_programacion.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/css.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/go.xml</loc>
@@ -31,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/html.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/js.xml</loc>
@@ -70,16 +74,20 @@
   <lastmod>2016-03-27T21:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://camboris.github.io/en/categories/cat_linux.xml</loc>
+  <lastmod>2016-05-29T01:10:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_origami.xml</loc>
   <lastmod>2016-03-27T21:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_programacion.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/css.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/go.xml</loc>
@@ -91,7 +99,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/html.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-21T23:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/js.xml</loc>
@@ -135,7 +143,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/rss.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-29T01:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/DarthVader/rss.xml</loc>
@@ -147,10 +155,10 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-05-07T13:50:00Z</lastmod>
+  <lastmod>2016-05-29T01:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-05-21T21:48:00Z</lastmod>
+  <lastmod>2016-05-29T01:10:00Z</lastmod>
  </sitemap>
 </sitemapindex>

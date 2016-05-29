@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<base href="https://camboris.github.io/en/posts/manejando-dotfiles-con-stow/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manejando dotfiles con Stow | Basta que sea</title>
+<link href="../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
+<link rel="canonical" href="https://camboris.github.io/en/posts/manejando-dotfiles-con-stow/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Cam Boris">
+<link rel="prev" href="../bcf-boris-css-framework/" title="BCF - Boris CSS Framework" type="text/html">
+<meta property="og:site_name" content="Basta que sea">
+<meta property="og:title" content="Manejando dotfiles con Stow">
+<meta property="og:url" content="https://camboris.github.io/en/posts/manejando-dotfiles-con-stow/">
+<meta property="og:description" content="Después de pasar buena parte del día instalando dependencias para probar React Native y que no ande, decidí poner un poco de orden a mis dotfiles.
+Como cualquier linuxero que haya modificado en algo l">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-05-28T21:58:25-03:00">
+<link rel="alternate" hreflang="es" href="../../../posts/manejando-dotfiles-con-stow/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://camboris.github.io/en/">
+
+                <span id="blog-title">Basta que sea</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../../archive.html">Archivo</a>
+                </li>
+<li>
+<a href="../../../categories/">Etiquetas</a>
+                </li>
+<li>
+<a href="../../../rss.xml">Canal RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://camboris.github.io/" rel="alternate" hreflang="es">Español</a></li>
+
+                
+                    
+    <li>
+    <a href="index.rst" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Manejando dotfiles con Stow</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Cam Boris
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-05-28T21:58:25-03:00" itemprop="datePublished" title="2016-05-28 21:58">2016-05-28 21:58</time></a></p>
+                <p class="commentline">
+        
+    <a href="#disqus_thread" data-disqus-identifier="cache/posts/manejando-dotfiles-con-stow.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.rst" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Después de pasar buena parte del día instalando dependencias para probar React Native y que no ande, decidí poner un poco de orden a mis dotfiles.</p>
+<p>Como cualquier linuxero que haya modificado en algo la configuración por defecto de cualquier programa sabe, los archivos dotfiles - llamados así porque empiezan con <cite>.</cite> para ocultarlos - se empiezan a acumular. Cuanto más se personalizan, con más razón uno quiere guardarlos.</p>
+<!-- TEASER_END -->
+<p>La primer reacción es ir guardando una copia, en un servicio como <tt class="docutils literal">Dropbox</tt> o <tt class="docutils literal">Drive</tt>, pero se vuelve algo tedioso.</p>
+<p>El segundo paso, es guardarlos en una carpeta, linkearlos a su destino original y versionar esa carpeta. Esto funciona bastante bien, pero termina siendo algo incomodo.</p>
+<p>Esta es la solución que venía usando, con un repo git privado en bitbucket, pero era un lío, distintas versiones de los archivos, con distintos nombres y distintas estrategias de guardado lo convirtieron en algo complicado de mantener y de a poco se estaba poniendo obsoleto, porque no hacía el mantenimiento adecuado.</p>
+<p>Investigando un poco, me encontré con <a class="reference external" href="https://www.gnu.org/software/stow/stow.html">Stow</a>, una herramienta que se encarga de gestionar los symlinks, ahorrándonos trabajo.</p>
+<p>La idea es guardar los archivos en carpetas, simulando dentro de estas carpetas, la estructura que deberían tener, y <a class="reference external" href="https://www.gnu.org/software/stow/stow.html">Stow</a> se ocupa de crear los links necesrios.</p>
+<p>Supongamos que en nuestra carpeta <tt class="docutils literal">home</tt>, creamos una llamada <tt class="docutils literal">dotfiles</tt>, dentro de esta
+podemos agrupar nuestros archivos de la manera que consideremos necesaria, entonces podemos tener una carpeta para <tt class="docutils literal">nvim</tt> otra para <tt class="docutils literal">i3</tt> otra para <tt class="docutils literal">git</tt>, etc.
+Dentro de la carpeta de <tt class="docutils literal">git</tt> tendríamos nuestro archivo de configuración en <tt class="docutils literal">.config\git\config</tt>.</p>
+<pre class="code text"><a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-1"></a>dotfiles
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-2"></a> ├- git
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-3"></a> |    └─ .config
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-4"></a> |          └─ git
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-5"></a> |                └─ config
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-6"></a> ├- nvim
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-7"></a> |     └─ .config
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-8"></a> |          └─ nvim
+<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-9"></a> |                └─ init.vim
+</pre>
+<p>Una vez creada esta estructura, dentro de <tt class="docutils literal">dotfiles</tt> ejecutamos <tt class="docutils literal">stow git</tt> y <tt class="docutils literal">stow</tt> nos creará los <tt class="docutils literal">symlinks</tt> en la carpeta padre. Una cosa a tener en cuenta es que <tt class="docutils literal">stow</tt> solo creará el <tt class="docutils literal">symlink</tt> si el archivo no existe o es un link, de esta manera no nos borrará nada importante.</p>
+<p>Una manera sencilla de visualizar esto es viendo mi repo público de <a class="reference external" href="https://github.com/camboris/dotfiles">dotfiles</a> en github, en caso de agregar archivos o querer replicar mi setup en otro equipo, solo tengo que clonar el repo y correr <tt class="docutils literal">stow X</tt>, <tt class="docutils literal">stow git</tt>, etc, para recuperar mi config.</p>
+<p>Otra cosa que hice fue mudar todos los archivos que pude de mi carpeta de usuario a su correspondiente carpeta <tt class="docutils literal">XDG</tt>, o sea, dentro de <tt class="docutils literal"><span class="pre">~/.config</span></tt>.</p>
+<div class="line-block">
+<div class="line">♪ <em>Ofelia, en el medio de su entierro</em>
+</div>
+<div class="line">♪ <em>ha causado gran revuelo al salir de su ataúd</em>
+</div>
+</div>
+<p>Solletico - <a class="reference external" href="https://www.youtube.com/watch?v=NGwuoJNjYwQ">Ofelia</a></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../bcf-boris-css-framework/" rel="prev" title="BCF - Boris CSS Framework">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="camborisblog",
+            disqus_url="https://camboris.github.io/en/posts/manejando-dotfiles-con-stow/",
+        disqus_title="Manejando dotfiles con Stow",
+        disqus_identifier="cache/posts/manejando-dotfiles-con-stow.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="camborisblog";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2016         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../assets/js/jquery.min.js"></script><script src="../../../assets/js/bootstrap.min.js"></script><script src="../../../assets/js/moment-with-locales.min.js"></script><script src="../../../assets/js/fancydates.js"></script><script src="../../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
