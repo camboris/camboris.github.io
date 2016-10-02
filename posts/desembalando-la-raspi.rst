@@ -9,6 +9,8 @@
 
 Por fin llegó. Tampoco la esperamos tanto, pero la ansiedad puede con nosotros. Y digo nosotros, porque fue una cuestión familiar, ya que el destino inicial es servir como centro multimedia para el tele.
 
+.. TEASER_END
+
 Ya habíamos estado experimentando con Kodi_ usando mi notebook, pero no era lo más cómodo, así que pedimos una Raspberry 3 con un kit, que traía todo lo necesario.
 
 Justo llegó el sábado del Pyday_, por lo que tuvimos que esperar un par de días más para probarla.
