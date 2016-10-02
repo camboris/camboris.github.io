@@ -15,11 +15,15 @@
  </url>
  <url>
   <loc>https://camboris.github.io/archive.html</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/cat_hardware/</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/cat_libros/</loc>
@@ -44,6 +48,10 @@
  <url>
   <loc>https://camboris.github.io/categories/go/</loc>
   <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/categories/hardware/</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/categories/haxe/</loc>
@@ -95,11 +103,15 @@
  </url>
  <url>
   <loc>https://camboris.github.io/en/archive.html</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/cat_hardware/</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/cat_libros/</loc>
@@ -124,6 +136,10 @@
  <url>
   <loc>https://camboris.github.io/en/categories/go/</loc>
   <lastmod>2016-04-17T20:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/categories/hardware/</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/categories/haxe/</loc>
@@ -167,16 +183,25 @@
  </url>
  <url>
   <loc>https://camboris.github.io/en/galleries/</loc>
-  <lastmod>2016-03-21T23:23:00Z</lastmod>
+  <lastmod>2016-09-28T19:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/en/galleries/DarthVader/</loc>
   <lastmod>2016-03-21T23:23:00Z</lastmod>
  </url>
  <url>
+  <loc>https://camboris.github.io/en/galleries/UnboxRaspi/</loc>
+  <lastmod>2016-09-28T19:44:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://camboris.github.io/en/posts/bcf-boris-css-framework/</loc>
   <lastmod>2016-05-07T13:01:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/bcf-boris-css-framework/" />
+ </url>
+ <url>
+  <loc>https://camboris.github.io/en/posts/desembalando-la-raspi/</loc>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://camboris.github.io/posts/desembalando-la-raspi/" />
  </url>
  <url>
   <loc>https://camboris.github.io/en/posts/esto-es-una-prueba/</loc>
@@ -215,11 +240,15 @@
  </url>
  <url>
   <loc>https://camboris.github.io/galleries/</loc>
-  <lastmod>2016-03-21T23:23:00Z</lastmod>
+  <lastmod>2016-09-28T19:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/galleries/DarthVader/</loc>
   <lastmod>2016-03-21T23:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/galleries/UnboxRaspi/</loc>
+  <lastmod>2016-09-28T19:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/listings/</loc>
@@ -228,6 +257,10 @@
  <url>
   <loc>https://camboris.github.io/posts/bcf-boris-css-framework/</loc>
   <lastmod>2016-05-07T13:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://camboris.github.io/posts/desembalando-la-raspi/</loc>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://camboris.github.io/posts/esto-es-una-prueba/</loc>

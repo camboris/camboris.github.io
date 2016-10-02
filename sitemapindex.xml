@@ -6,12 +6,16 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://camboris.github.io/categories/cat_hardware.xml</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/categories/cat_libros.xml</loc>
   <lastmod>2016-03-27T21:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_linux.xml</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-05-29T01:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_origami.xml</loc>
@@ -28,6 +32,10 @@
  <sitemap>
   <loc>https://camboris.github.io/categories/go.xml</loc>
   <lastmod>2016-04-17T21:37:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/categories/hardware.xml</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/haxe.xml</loc>
@@ -70,12 +78,16 @@
   <lastmod>2016-03-27T21:02:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://camboris.github.io/en/categories/cat_hardware.xml</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_libros.xml</loc>
   <lastmod>2016-03-27T21:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_linux.xml</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-05-29T01:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_origami.xml</loc>
@@ -92,6 +104,10 @@
  <sitemap>
   <loc>https://camboris.github.io/en/categories/go.xml</loc>
   <lastmod>2016-04-17T21:37:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/categories/hardware.xml</loc>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/haxe.xml</loc>
@@ -135,30 +151,38 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/galleries/DarthVader/rss.xml</loc>
-  <lastmod>2016-05-21T21:48:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/en/galleries/UnboxRaspi/rss.xml</loc>
+  <lastmod>2016-09-28T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/galleries/rss.xml</loc>
-  <lastmod>2016-05-21T21:48:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/rss.xml</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/DarthVader/rss.xml</loc>
-  <lastmod>2016-05-21T21:48:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://camboris.github.io/galleries/UnboxRaspi/rss.xml</loc>
+  <lastmod>2016-09-28T19:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/rss.xml</loc>
-  <lastmod>2016-05-21T21:48:00Z</lastmod>
+  <lastmod>2016-09-28T19:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-05-29T01:10:00Z</lastmod>
+  <lastmod>2016-10-02T21:55:00Z</lastmod>
  </sitemap>
 </sitemapindex>
