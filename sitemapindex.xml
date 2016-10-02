@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_hardware.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/cat_libros.xml</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/hardware.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/categories/haxe.xml</loc>
@@ -79,7 +79,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_hardware.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/cat_libros.xml</loc>
@@ -107,7 +107,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/hardware.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/categories/haxe.xml</loc>
@@ -163,7 +163,7 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/en/rss.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/galleries/DarthVader/rss.xml</loc>
@@ -179,10 +179,10 @@
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/rss.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://camboris.github.io/sitemap.xml</loc>
-  <lastmod>2016-10-02T21:55:00Z</lastmod>
+  <lastmod>2016-10-02T21:58:00Z</lastmod>
  </sitemap>
 </sitemapindex>
