@@ -9,7 +9,8 @@
 <link href="../../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/theme.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
 <link rel="canonical" href="https://camboris.github.io/en/posts/linting-de-js-en-neovim/">
@@ -109,24 +110,24 @@
 <p>Neomake soporta varios compiladores o linters de js para informar los errores, lo que llaman "Makers".</p>
 <!-- TEASER_END -->
 <p>Configuré <a class="reference external" href="http://jscs.info/">jscs</a>, porque sí. La verdad es que no hice una búsqueda demasiado exhaustiva, sino que me quedé con el primero que funcionó. Lo instalé global con npm, porque hoy quién se puede escapar de node y npm...</p>
-<pre class="code sh"><a name="rest_code_fe7be1998ad84847bb85f5612104300c-1"></a>npm install -g jscs
+<pre class="code sh"><a name="rest_code_9e802bd9c0ee4e3b845c1844e47d09cc-1"></a>npm install -g jscs
 </pre>
 <p>Una vez instalado jscs, podemos generar un archivo de configuración automáticamente que nos pregunta el estilo de programación que usamos, corriendo este comando en la carpeta del proyecto.</p>
-<pre class="code sh"><a name="rest_code_5c437475b9a9440087b2925bc8f38ad5-1"></a>jscs --auto-configure ./
+<pre class="code sh"><a name="rest_code_3ea91e454927434cb2f37357ee1a2a0b-1"></a>jscs --auto-configure ./
 </pre>
 <p>Yo elegí "idiomatic" porque sí. Tengo que buscar un estilo que me guste y ese me pareció interesante para empezar a probar.</p>
 <p>Tenemos que asegurarnos que Neomake corra cuando guardamos el archivo, así que tenemos que tener esto en nuestro <tt class="docutils literal">init.vim</tt></p>
-<pre class="code sh"><a name="rest_code_109e3c0786d445f99d32024a8ec38629-1"></a>autocmd! BufWritePost * Neomake
+<pre class="code sh"><a name="rest_code_91410a7464ee49b499f69ecc1c8b5e24-1"></a>autocmd! BufWritePost * Neomake
 </pre>
 <p>Con esto ya es suficiente para que nos marque los errores al grabar el archivo, pero siempre se puede configurar un poco más :)</p>
 <p>Como estoy probando React y cada framework está obligado a reinventar la rueda, tienen algo llamado JSX, que es js con la posibilidad de escribir html o xml directamente, además de usar ES6 y compilar con Babel y todas esas transformaciones que tanto gustan...</p>
 <p>Necesitamos pasarle a <tt class="docutils literal">jscs</tt> parámetros para indicarle que usamos estas cosas y no proteste. Para eso, redefinimos el <em>maker</em> de <tt class="docutils literal">neomake</tt> de la siguiente manera en nuestro init.vim</p>
-<pre class="code text"><a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-1"></a>let g:neomake_javascript_jscs_maker = {
-<a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-2"></a>    \ 'exe': 'jscs',
-<a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-3"></a>    \ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
-<a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-4"></a>    \ 'errorformat': '%f: line %l\, col %c\, %m',
-<a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-5"></a>    \ }
-<a name="rest_code_5a64cc91ca7b4b92b97d011105da253d-6"></a>let g:neomake_javascript_enabled_makers = ['jscs']
+<pre class="code text"><a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-1"></a>let g:neomake_javascript_jscs_maker = {
+<a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-2"></a>    \ 'exe': 'jscs',
+<a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-3"></a>    \ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
+<a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-4"></a>    \ 'errorformat': '%f: line %l\, col %c\, %m',
+<a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-5"></a>    \ }
+<a name="rest_code_93d948fd0eca44e18aaf84f58c651fb0-6"></a>let g:neomake_javascript_enabled_makers = ['jscs']
 </pre>
 <p>Y si todo sale bien, ahora tenemos linting de js en Neovim de manera asíncrona.</p>
 <div class="line-block">
@@ -175,7 +176,7 @@
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2016         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2017         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>

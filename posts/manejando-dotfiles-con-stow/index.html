@@ -9,7 +9,8 @@
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
 <link rel="canonical" href="https://camboris.github.io/posts/manejando-dotfiles-con-stow/">
@@ -34,7 +35,7 @@ Como cualquier linuxero que haya modificado en algo l">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Mostrar navegación</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -114,15 +115,15 @@ Como cualquier linuxero que haya modificado en algo l">
 <p>Supongamos que en nuestra carpeta <tt class="docutils literal">home</tt>, creamos una llamada <tt class="docutils literal">dotfiles</tt>, dentro de esta
 podemos agrupar nuestros archivos de la manera que consideremos necesaria, entonces podemos tener una carpeta para <tt class="docutils literal">nvim</tt> otra para <tt class="docutils literal">i3</tt> otra para <tt class="docutils literal">git</tt>, etc.
 Dentro de la carpeta de <tt class="docutils literal">git</tt> tendríamos nuestro archivo de configuración en <tt class="docutils literal">.config\git\config</tt>.</p>
-<pre class="code text"><a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-1"></a>dotfiles
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-2"></a> ├- git
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-3"></a> |    └─ .config
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-4"></a> |          └─ git
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-5"></a> |                └─ config
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-6"></a> ├- nvim
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-7"></a> |     └─ .config
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-8"></a> |          └─ nvim
-<a name="rest_code_1fb78b1e0b6f4af0a4eddfbfb109940b-9"></a> |                └─ init.vim
+<pre class="code text"><a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-1"></a>dotfiles
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-2"></a> ├- git
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-3"></a> |    └─ .config
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-4"></a> |          └─ git
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-5"></a> |                └─ config
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-6"></a> ├- nvim
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-7"></a> |     └─ .config
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-8"></a> |          └─ nvim
+<a name="rest_code_2a64f7e2ce1c424893dabee3f3da8c7e-9"></a> |                └─ init.vim
 </pre>
 <p>Una vez creada esta estructura, dentro de <tt class="docutils literal">dotfiles</tt> ejecutamos <tt class="docutils literal">stow git</tt> y <tt class="docutils literal">stow</tt> nos creará los <tt class="docutils literal">symlinks</tt> en la carpeta padre. Una cosa a tener en cuenta es que <tt class="docutils literal">stow</tt> solo creará el <tt class="docutils literal">symlink</tt> si el archivo no existe o es un link, de esta manera no nos borrará nada importante.</p>
 <p>Una manera sencilla de visualizar esto es viendo mi repo público de <a class="reference external" href="https://github.com/camboris/dotfiles">dotfiles</a> en github, en caso de agregar archivos o querer replicar mi setup en otro equipo, solo tengo que clonar el repo y correr <tt class="docutils literal">stow X</tt>, <tt class="docutils literal">stow git</tt>, etc, para recuperar mi config.</p>
@@ -170,7 +171,7 @@ Dentro de la carpeta de <tt class="docutils literal">git</tt> tendríamos nuestr
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2016         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2017         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>

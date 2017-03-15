@@ -9,7 +9,8 @@
 <link href="../../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/theme.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
 <link rel="canonical" href="https://camboris.github.io/en/posts/bcf-boris-css-framework/">
@@ -114,26 +115,26 @@
 <p>Como característica final, -dije que era un framework sencillo-, tenemos una grilla, robada y modificada. La grilla original es <a class="reference external" href="https://github.com/mourner/dead-simple-grid">Dead Simple Grid</a>.</p>
 <p>El principal cambio que le hice a la grilla, fue hacerla depender de una clase <tt class="docutils literal">container</tt> al estilo bootstrap, para que la estructura quede  <tt class="docutils literal">.container &gt; .row &gt; .col</tt></p>
 <p>Al encararlo de esta manera nos permite definir libremente el tamaño del <tt class="docutils literal">container</tt> y las <tt class="docutils literal">col</tt>, dándonos flexibilidad absoluta para resolver los problemas que nos proponen algunos diseñadores cuando se les ocurre poner 5 columnas en el diseño.</p>
-<pre class="code text"><a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-1"></a>//css
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-2"></a>.container {
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-3"></a>    width: 100%
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-4"></a>}
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-5"></a>
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-6"></a>.col.-demo {
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-7"></a>    width: 20%;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-8"></a>}
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-9"></a>
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-10"></a>
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-11"></a>//html
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-12"></a>&lt;div class="container"&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-13"></a>    &lt;div class="row"&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-14"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-15"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-16"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-17"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-18"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-19"></a>    &lt;/div&gt;
-<a name="rest_code_c697e4e5753c4815b2890e39ac8fbb57-20"></a>&lt;/div&gt;
+<pre class="code text"><a name="rest_code_c2b4ce9dce29486988f2e178842702ee-1"></a>//css
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-2"></a>.container {
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-3"></a>    width: 100%
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-4"></a>}
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-5"></a>
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-6"></a>.col.-demo {
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-7"></a>    width: 20%;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-8"></a>}
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-9"></a>
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-10"></a>
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-11"></a>//html
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-12"></a>&lt;div class="container"&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-13"></a>    &lt;div class="row"&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-14"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-15"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-16"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-17"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-18"></a>        &lt;div class="col -demo"&gt;&lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-19"></a>    &lt;/div&gt;
+<a name="rest_code_c2b4ce9dce29486988f2e178842702ee-20"></a>&lt;/div&gt;
 </pre>
 <p>Si a alguien le suena raro que la clase sea <tt class="docutils literal"><span class="pre">-demo</span></tt> se debe a que estoy tratando de seguir los consejos de este sistema <a class="reference external" href="https://github.com/rstacruz/rscss">Reasonable System for CSS Stylesheet Structure</a>. Estoy probando y adaptándolo a mi gusto.</p>
 <p>Una de las ventajas de encarar la grilla de esta manera, es que podemos redefinir arbitrariamente el ancho de las columnas dentro de los media queries, ajustándolo a las necesidades particulares del sitio.</p>
@@ -179,7 +180,7 @@
         <!--End of body content-->
 
         <footer id="footer">
-            Contents © 2016         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2017         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>

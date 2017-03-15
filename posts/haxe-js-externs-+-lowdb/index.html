@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haxe JS | Externs + LowDb | Basta que sea</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="canonical" href="https://camboris.github.io/posts/haxe-js-externs-%2B-lowdb/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Cam Boris">
+<link rel="prev" href="../desembalando-la-raspi/" title="Desembalando la Raspi" type="text/html">
+<meta property="og:site_name" content="Basta que sea">
+<meta property="og:title" content="Haxe JS | Externs + LowDb">
+<meta property="og:url" content="https://camboris.github.io/posts/haxe-js-externs-%2B-lowdb/">
+<meta property="og:description" content="Estoy probando cosas en Js últimamente y no me gustan mucho babel y parientes. Permiten usar características avanzadas del lenguaje, pero al final del día, sigue siendo Js. :)
+Haxe nos permite tener u">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-03-08T22:27:24-03:00">
+<link rel="alternate" hreflang="en" href="../../en/posts/haxe-js-externs-%2B-lowdb/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Mostrar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://camboris.github.io/">
+
+                <span id="blog-title">Basta que sea</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archivo</a>
+                </li>
+<li>
+<a href="../../categories/">Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml">Canal RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://camboris.github.io/en/" rel="alternate" hreflang="en">English</a></li>
+
+                
+                    
+    <li>
+    <a href="../haxe-js-externs-%2B-lowdb/index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="../haxe-js-externs-%2B-lowdb/" class="u-url">Haxe JS | Externs + LowDb</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Cam Boris
+            </span></p>
+            <p class="dateline"><a href="../haxe-js-externs-%2B-lowdb/" rel="bookmark"><time class="published dt-published" datetime="2017-03-08T22:27:24-03:00" itemprop="datePublished" title="2017-03-08 22:27">2017-03-08 22:27</time></a></p>
+                <p class="commentline">
+        
+    <a href="../haxe-js-externs-%2B-lowdb/#disqus_thread" data-disqus-identifier="cache/posts/haxe-js-externs-+-lowdb.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="../haxe-js-externs-%2B-lowdb/index.rst" id="sourcelink">Código fuente</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Estoy probando cosas en Js últimamente y no me gustan mucho babel y parientes. Permiten usar características avanzadas del lenguaje, pero al final del día, sigue siendo Js. :)</p>
+<p><a class="reference external" href="http://haxe.org/">Haxe</a> nos permite tener un compilador real validando nuestro código, además de sus características específicas como: Macros, enums, tipos de datos abstractos, etc.</p>
+<p>Para poder usar <a class="reference external" href="http://haxe.org/">Haxe</a> con Js y acceder a librerías externas tenemos que usar Externs. Son definiciones de los métodos que proveen estas librerías de terceros en un formato que le permite a <a class="reference external" href="http://haxe.org/">Haxe</a> validar tipos de datos, estructuras y demases. Para estas pruebas voy a usar <a class="reference external" href="https://nodejs.org/en/">Node</a>, ya que me permite probar de manera rápida y sencilla el código sin tener que armar una página web para ejecutar en el browser.</p>
+<!-- TEASER_END -->
+<p>Me voy a basar en el ejemplo de esta <a class="reference external" href="http://matthijskamstra.github.io/haxenode/03lowdb/about.html">http://matthijskamstra.github.io/haxenode/03lowdb/about.html</a>, pero con algunas adaptaciones.</p>
+<p>Para instalar algunas libs necesarias uso <a class="reference external" href="http://lib.haxe.org/">Haxelib</a>, la herramienta de manejo de paquetes de <a class="reference external" href="http://haxe.org/">Haxe</a>.</p>
+<pre class="code bash"><a name="rest_code_79751a3bbbab46c8bdfd7bb2b75313ba-1"></a>haxelib install hxnodejs
+<a name="rest_code_79751a3bbbab46c8bdfd7bb2b75313ba-2"></a>haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
+</pre>
+<p>El primer comando instala una librería directamente del repositorio de <a class="reference external" href="http://lib.haxe.org/">Haxelib</a>. El segundo usa el código del repo git, especificando la rama haxelib.</p>
+<p>La librería <tt class="docutils literal">hxnodejs</tt> nos da externs, es decir una interfaz para usar <a class="reference external" href="https://nodejs.org/en/">Node</a> con <a class="reference external" href="http://haxe.org/">Haxe</a> mientras que <a class="reference external" href="https://github.com/clemos/haxe-js-kit">js-kit</a> nos brinda muchos otros externs de librerías populares, tanto de <a class="reference external" href="https://nodejs.org/en/">Node</a> como de Js.</p>
+<p>Para estas pruebas elegí <a class="reference external" href="https://github.com/typicode/lowdb">LowDb</a> porque me pareció interesante y útil el concepto de una bbdd json. En este momento estoy trabajando en un sistema que abusa del xml y me la paso deseando tener algo más flexible y sencillo de usar. Esta lib nos permite guardar tanto en un archivo físico como uno en memoria, en LocalStorage o implementar los métodos de guardado y recuperación, pudiendo implementar otras formas de guardado asíncronas.</p>
+<p>Tengo que instalar <a class="reference external" href="https://github.com/typicode/lowdb">LowDb</a> usando npm, así que inicializo el archivo <tt class="docutils literal">package.json</tt> y creo la estructura de carpetas necesarias para la demo.</p>
+<pre class="code bash"><a name="rest_code_54b54f0ea8eb466392895314eabf6106-1"></a>npm init
+<a name="rest_code_54b54f0ea8eb466392895314eabf6106-2"></a>npm install lowdb --save
+<a name="rest_code_54b54f0ea8eb466392895314eabf6106-3"></a>mkdir src
+<a name="rest_code_54b54f0ea8eb466392895314eabf6106-4"></a>mkdir bin
+</pre>
+<p>El siguiente paso es crear el archivo <tt class="docutils literal">build.hxml</tt> que tiene las instrucciones para que <a class="reference external" href="http://haxe.org/">Haxe</a> compile el proyecto.</p>
+<pre class="code bash"><a name="rest_code_f2322afe582e4704a3581156e6aa9a44-1"></a>-cp src
+<a name="rest_code_f2322afe582e4704a3581156e6aa9a44-2"></a>-lib js-kit
+<a name="rest_code_f2322afe582e4704a3581156e6aa9a44-3"></a>-lib hxnodejs
+<a name="rest_code_f2322afe582e4704a3581156e6aa9a44-4"></a>-main Main
+<a name="rest_code_f2322afe582e4704a3581156e6aa9a44-5"></a>-js bin/main.js
+<a name="rest_code_f2322afe582e4704a3581156e6aa9a44-6"></a>-cmd node bin/main.js
+</pre>
+<p>Básicamente le digo a <a class="reference external" href="http://haxe.org/">Haxe</a> que el código está en la carpeta <tt class="docutils literal">src</tt>, que use las libs <tt class="docutils literal"><span class="pre">js-kit</span></tt> y <tt class="docutils literal">hxnodejs</tt>, que la clase principal es <tt class="docutils literal">Main</tt>, que el archivo de salida es <tt class="docutils literal">bin/main.js</tt> y por ultimo que ejecute <tt class="docutils literal">node bin/main.js</tt>, o sea, el programa.</p>
+<p>En <tt class="docutils literal">src/Main.hx</tt> pongo:</p>
+<pre class="code javascript"><a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-1"></a><span class="kr">package</span><span class="p">;</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-2"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-3"></a><span class="kr">import</span> <span class="nx">js</span><span class="p">.</span><span class="nx">Node</span><span class="p">;</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-4"></a><span class="kr">import</span> <span class="nx">js</span><span class="p">.</span><span class="nx">npm</span><span class="p">.</span><span class="nx">LowDb</span><span class="p">;</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-5"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-6"></a><span class="kr">class</span> <span class="nx">Main</span> <span class="p">{</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-7"></a>    <span class="kr">public</span> <span class="kd">function</span> <span class="k">new</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-8"></a>        <span class="c1">//initialize variables</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-9"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s1">'demo lowdb'</span><span class="p">);</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-10"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-11"></a>        <span class="kd">var</span> <span class="nx">_lowdb</span> <span class="o">=</span> <span class="nx">LowDb</span><span class="p">.</span><span class="nx">construct</span><span class="p">(</span><span class="s2">"db.json"</span><span class="p">,</span> <span class="p">{</span><span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">});</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-12"></a>        <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">defaults</span><span class="p">({</span><span class="s1">'posts'</span><span class="o">:</span> <span class="p">[],</span> <span class="s1">'user'</span><span class="o">:</span> <span class="p">{}}).</span><span class="nx">write</span><span class="p">();</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-13"></a>        <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"posts"</span><span class="p">).</span><span class="nx">push</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">"Mario"</span> <span class="p">}).</span><span class="nx">write</span><span class="p">();</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-14"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-15"></a>        <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">'user.name'</span><span class="p">,</span> <span class="s1">'boris'</span><span class="p">).</span><span class="nx">write</span><span class="p">();</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-16"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-17"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s2">"user name "</span> <span class="o">+</span> <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'user.name'</span><span class="p">));</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-18"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s2">"has posts "</span> <span class="o">+</span> <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="s2">"posts"</span><span class="p">).</span><span class="nx">value</span><span class="p">());</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-19"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s2">"number of posts "</span> <span class="o">+</span> <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">).</span><span class="nx">size</span><span class="p">().</span><span class="nx">value</span><span class="p">());</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-20"></a>        <span class="nx">trace</span><span class="p">(</span><span class="s2">"filter posts"</span> <span class="o">+</span> <span class="nx">_lowdb</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"posts"</span><span class="p">).</span><span class="nx">filter</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">}).</span><span class="nx">take</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="nx">value</span><span class="p">());</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-21"></a>    <span class="p">}</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-22"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-23"></a>    <span class="kr">static</span> <span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-24"></a>        <span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Main</span><span class="p">();</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-25"></a>    <span class="p">}</span>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-26"></a>
+<a name="rest_code_fe5332b7a66d43cb8b2425912ed29630-27"></a><span class="p">}</span>
+</pre>
+<p>El código es bastante claro. Empiezo importando las librerías que voy a usar y en el constructor de la clase, inicializo la bbdd. Por cuestiones de como se arman los externs, hay cosas que no se pueden mapear uno a uno con la lib origina, es por eso que la línea <tt class="docutils literal"><span class="pre">LowDb.construct(....</span></tt> no mapea uno a uno con el constructor en Js.</p>
+<p>Con <tt class="docutils literal">defaults</tt> defino una estructura básica del archivo, y después pusheo un objeto con la estructura del post en el array de posts, y seteo un valor especifico en una estructura de objeto, que sería el user.</p>
+<p>Lo más interesante de esta lib, es que esta basada en <a class="reference external" href="https://lodash.com/">Lodash</a>, una lib que brinda todo tipo de funciones helper. El resultado de las consultas a <a class="reference external" href="https://github.com/typicode/lowdb">LowDb</a> es un <tt class="docutils literal">chain</tt> de <a class="reference external" href="https://lodash.com/">Lodash</a>, lo que permite manipularlo de manera sencilla. En los trace del ejemplo, hago filtrados, ordenamientos, búsqueda de valores específicos, etc.</p>
+<p>Investigando un poco para este post, encontré que hay un port de la lib en <a class="reference external" href="http://haxe.org/">Haxe</a> puro, lo que simplificaría la integración. Me queda probarlo, así como otros externs de <a class="reference external" href="https://github.com/clemos/haxe-js-kit">js-kit</a></p>
+<div class="line-block">
+<div class="line">♪ <em>In a steel cage match with a maze of cables</em>
+</div>
+<div class="line">♪ <em>Brazen, game-face based on Azazel</em>
+</div>
+<div class="line">
+<a class="reference external" href="https://www.youtube.com/watch?v=7T_KKiQiolk">Kirby</a> - Aesop Rock</div>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../desembalando-la-raspi/" rel="prev" title="Desembalando la Raspi">Publicación anterior</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="camborisblog",
+            disqus_url="https://camboris.github.io/posts/haxe-js-externs-%2B-lowdb/",
+        disqus_title="Haxe JS | Externs + LowDb",
+        disqus_identifier="cache/posts/haxe-js-externs-+-lowdb.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="camborisblog";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:camboris@gmail.com">Cam Boris</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
